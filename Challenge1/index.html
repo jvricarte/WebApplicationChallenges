@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IRRF</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="input">
+                <div class="input-container">
+                    <form class="input-form">
+                        <div class="salario-bruto">
+                            <label for="input-form">Valor do salário Bruto: </label>
+                            <input type="number" placeholder="0,00" required>
+                        </div>
+                        <div class="dependentes">
+                            <label for="input-form">Dependentes: (deduções)</label>
+                            <input type="number" required>
+                        </div>
+                        <div class="deducoes">
+                            <label for="input-form">Outras deduções</label>
+                            <input type="number" placeholder="0,00" required>
+                        </div>
+                        <div class="input-buttons">
+                            <button type="reset">Limpar</button>
+                            <button type="submit">Calcular IRRF</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="output">
+                <div class="output-container">
+                    <div class="salario-base">
+                        <p>Salário Base: R$ </p>
+                    </div>
+                    <div class="calculo-inss">
+                        <p>Cálculo de INSS: R$ </p>
+                    </div>
+                    <div class="dependentes">
+                        <p>Dependentes: </p>
+                    </div>
+                    <div class="outras-deducoes">
+                        <p>Outras deduções: R$ </p>
+                    </div>
+                    <div class="base-calculo">
+                        <p>Base para cálculo</p>
+                    </div>
+                    <div class="imposto-devido">
+                        <p>Imposto devido: R$ </p>
+                    </div>
+                    <div class="output-button">
+                        <button type="reset">Calcular novamente</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
