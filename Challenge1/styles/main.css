@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background-color: azure;
 }
 
 main {
@@ -20,8 +21,16 @@ main {
 }
 
 .container {
-    width: 30%;
-    height: 100vh;
+    width: 35%;
     margin: auto;
     margin-top: 15%;
+    background-color: rgb(114, 114, 240);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
+}
+
+.input {
+    border-bottom: 1px solid black;
+    padding: 5px 5px 15px 5px;
 }
