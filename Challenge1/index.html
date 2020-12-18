@@ -12,18 +12,14 @@
             <section class="input">
                 <div class="input-container">
                     <form class="input-form">
-                        <div class="salario-bruto">
-                            <label for="input-form">Valor do salário Bruto: </label>
-                            <input type="number" placeholder="0,00" required>
-                        </div>
-                        <div class="dependentes">
-                            <label for="input-form">Dependentes: (deduções)</label>
-                            <input type="number" required>
-                        </div>
-                        <div class="deducoes">
-                            <label for="input-form">Outras deduções</label>
-                            <input type="number" placeholder="0,00" required>
-                        </div>
+                            <div class="input-form-grid">
+                                <label for="input-form">Valor do salário Bruto: </label>
+                                <input type="number" placeholder="0,00" required>
+                                <label for="input-form">Dependentes: (deduções)</label>
+                                <input type="number" required>
+                                <label for="input-form">Outras deduções</label>
+                                <input type="number" placeholder="0,00" required>
+                            </div>
                         <div class="input-buttons">
                             <button type="reset">Limpar</button>
                             <button type="submit">Calcular IRRF</button>
@@ -53,7 +49,7 @@
                         <p>Imposto devido: R$ </p>
                     </div>
                     <div class="output-button">
-                        <button type="reset">Calcular novamente</button>
+                        <button type="submit">Calcular novamente</button>
                     </div>
                 </div>
             </section>

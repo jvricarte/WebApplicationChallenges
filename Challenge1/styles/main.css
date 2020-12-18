@@ -21,9 +21,9 @@ main {
 }
 
 .container {
-    width: 35%;
+    width: 26rem;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 10%;
     background-color: rgb(114, 114, 240);
     border-radius: 5px;
     padding: 10px;
@@ -33,4 +33,53 @@ main {
 .input {
     border-bottom: 1px solid black;
     padding: 5px 5px 15px 5px;
+}
+
+.input-form-grid {
+    display: grid;
+}
+
+label {
+    grid-column: 1;
+}
+
+input {
+    grid-column: 2;
+    align-items: center;
+}
+
+.input-buttons {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.input-buttons button {
+    width: 6rem;
+    height: 2rem;
+    background-color: rgb(211, 209, 221);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin: .3rem;
+    cursor: pointer;
+}
+
+.output {
+    padding: 5px 5px 15px 5px;
+}
+
+.output-button {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.output-button button {
+    padding: 0rem .3rem;
+    height: 2rem;
+    background-color: rgb(211, 209, 221);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin: .3rem;
+    cursor: pointer;
 }
