@@ -17,15 +17,15 @@
                     <form class="input-form">
                             <div class="input-form-grid">
                                 <label for="input-form">Valor do salário Bruto: </label>
-                                <input type="number" placeholder="0,00" required>
+                                <input type="number" class="salario-bruto" placeholder="0,00" required>
                                 <label for="input-form">Dependentes: (deduções)</label>
-                                <input type="number" required>
+                                <input type="number" class="dependentes" required>
                                 <label for="input-form">Outras deduções</label>
-                                <input type="number" placeholder="0,00" required>
+                                <input type="number" class="deducoes" placeholder="0,00" required>
                             </div>
                         <div class="input-buttons">
                             <button type="reset">Limpar</button>
-                            <button type="submit">Calcular IRRF</button>
+                            <button type="submit" onclick="calcular()">Calcular IRRF</button>
                         </div>
                     </form>
                 </div>
@@ -58,5 +58,6 @@
             </section>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
