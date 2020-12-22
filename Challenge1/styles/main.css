@@ -30,6 +30,16 @@ main {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
 }
 
+.container h1 {
+    background-color:rgb(211, 209, 221);
+    border-radius: 5px;
+    padding: 5px;
+    width: 20rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
 .input {
     border-bottom: 1px solid black;
     padding: 5px 5px 15px 5px;
@@ -82,4 +92,17 @@ input {
     border-radius: 5px;
     margin: .3rem;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 19rem;
+    }
+    .container h1 {
+        width: 13rem;
+        font-size: 1rem;
+    }
+    .input {
+        grid-column: 1;
+    }
 }
