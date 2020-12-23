@@ -25,7 +25,7 @@
                             </div>
                         <div class="input-buttons">
                             <button type="reset">Limpar</button>
-                            <button type="submit" onclick="calcular()">Calcular IRRF</button>
+                            <input type="button" onclick="calcular()" value="Calcular IRRF">
                         </div>
                     </form>
                 </div>
@@ -34,30 +34,31 @@
             <section class="output">
                 <div class="output-container">
                     <div class="salario-base">
-                        <p>Salário Base: R$ </p>
+                        <p>Salário Base: </p> <span></span>
                     </div>
                     <div class="calculo-inss">
-                        <p>Cálculo de INSS: R$ </p>
+                        <p>Cálculo de INSS: </p>
                     </div>
                     <div class="dependentes">
                         <p>Dependentes: </p>
                     </div>
                     <div class="outras-deducoes">
-                        <p>Outras deduções: R$ </p>
+                        <p>Outras deduções: </p>
                     </div>
                     <div class="base-calculo">
-                        <p>Base para cálculo</p>
+                        <p>Base para cálculo: </p>
                     </div>
                     <div class="imposto-devido">
-                        <p>Imposto devido: R$ </p>
+                        <p>Imposto devido: </p>
                     </div>
                     <div class="output-button">
-                        <button type="submit">Calcular novamente</button>
+                        <button type="submit" onclick="limpar()">Limpar</button>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="calcular.js"></script>
+    <script src="limpar.js"></script>
 </body>
 </html>

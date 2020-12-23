@@ -23,7 +23,7 @@ main {
 .container {
     width: 26rem;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: rgb(114, 114, 240);
     border-radius: 5px;
     padding: 10px;
@@ -63,7 +63,8 @@ input {
     text-align: center;
 }
 
-.input-buttons button {
+.input-buttons button, 
+.input-buttons input {
     width: 6rem;
     height: 2rem;
     background-color: rgb(211, 209, 221);
