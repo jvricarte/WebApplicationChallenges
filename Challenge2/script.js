@@ -42,7 +42,9 @@ function addTask() {
 }
 
 function taskDone(pos) {
-    
+    const listOfLi = document.querySelectorAll("li")
+    listOfLi[pos].classList.add("task-done")
+
 }
 
 function taskDelete(pos) {

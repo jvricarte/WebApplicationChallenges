@@ -50,6 +50,10 @@ i {
     cursor: pointer;
 }
 
+.task-done {
+    text-decoration: line-through;
+}
+
 input {
     border-style: none;
     border-radius: 5px;
