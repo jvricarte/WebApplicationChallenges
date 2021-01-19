@@ -43,7 +43,13 @@ function addTask() {
 
 function taskDone(pos) {
     const listOfLi = document.querySelectorAll("li")
-    listOfLi[pos].classList.add("task-done")
+    const findingClass = document.querySelector(".task-done")
+    if (findingClass != undefined) {
+        listOfLi[pos].classList.remove("task-done")
+    } else {
+        listOfLi[pos].classList.add("task-done")
+    }
+    
 
 }
 
