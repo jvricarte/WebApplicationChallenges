@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Minhas tarefas</h1>
-    </header>
-    <main>
-        <div class="add-task">
-            <input type="text"><button>Adicionar</button>
-        </div>
-    </main>
+    <div class="container">
+        <header>
+            <h1>Minhas tarefas</h1>
+        </header>
+        <main>
+            <div class="add-task">
+                <input id="input" type="text"><i onclick="addTask()" class="fas fa-plus-square"></i>
+            </div>
+            <div class="tasks">
+                <ol>
+                    <!-- Aqui serão criadas as tarefas -->
+                </ol>
+            </div>
+        </main>
+    </div>
+    <footer>
+        Desenvolvido por jvricarte
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
