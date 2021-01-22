@@ -1,22 +1,22 @@
+window.addEventListener('onload', showTaskList)
 const ulElement = document.querySelector("ul")
 const input = document.querySelector("#input")
 
-const taskList = [{
-    taskName: "Teste1", isDone: 0
-}]
+const taskList = []
 
 function showTaskList() {
     ulElement.innerHTML = ''
     for (task of taskList) {
         const liElement = document.createElement("li")
-        const textTask = document.createTextNode(task.taskName)
+        const position = taskList.indexOf(task)
+        const localStorageItem = localStorage.getItem(task.id)
+        const textTask = document.createTextNode(localStorageItem)
         const done = document.createElement("i")
         done.classList.add("fas")
         done.classList.add("fa-check-square")
         const toDelete = document.createElement("i")
         toDelete.classList.add("fas")
         toDelete.classList.add("fa-trash-alt")
-        const position = taskList.indexOf(task)
         done.setAttribute('onclick', `taskDone(${position})`)
         toDelete.setAttribute('onclick', `taskDelete(${position})`)
         const breaking = document.createElement("br")
@@ -30,11 +30,12 @@ function showTaskList() {
         if (task.isDone == 1) {
             liElement.classList.add("task-done")
         }
+
     }
 }
 
 const button = document.querySelector(".fas.fa-plus-square")
-button.addEventListener('click', addTask)
+button.setAttribute('onclick', `addTask()`)
 
 function addTask() {
     const obj = new Object
@@ -44,6 +45,9 @@ function addTask() {
     taskList.push(obj)
     input.value = ''
 
+    const id = Math.random().toString(32).substr(2, 9)
+    obj.id = id
+    localStorage.setItem(obj.id, obj.taskName)
     showTaskList()
 }
 
@@ -54,6 +58,7 @@ function taskDone(pos) {
 }
 
 function taskDelete(pos) {
+    localStorage.removeItem(taskList[pos].id)
     taskList.splice(pos, 1)
     showTaskList()
 }
