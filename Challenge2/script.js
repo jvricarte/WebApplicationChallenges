@@ -38,14 +38,19 @@ const button = document.querySelector(".fas.fa-plus-square")
 button.setAttribute('onclick', `addTask()`)
 
 function addTask() {
-    const obj = new Object
-    const inputTask = input.value
-    obj.taskName = inputTask
-    obj.isDone = 0
-    taskList.push(obj)
-    input.value = ''
-    setLocalStorage()
-    showTaskList()
+    if (input.value == "") {
+        input.style.borderStyle = 'solid'
+        input.style.borderColor = '#F00000'
+    } else {
+        input.style.borderStyle = 'none'
+        const obj = new Object
+        obj.taskName = input.value
+        obj.isDone = 0
+        taskList.push(obj)
+        input.value = ''
+        setLocalStorage()
+        showTaskList()
+    }
 }
 
 function taskDone(pos) {
