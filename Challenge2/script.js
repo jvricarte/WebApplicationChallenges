@@ -30,7 +30,6 @@ function showTaskList() {
         if (task.isDone == 1) {
             liElement.classList.add("task-done")
         }
-
     }
 }
 
