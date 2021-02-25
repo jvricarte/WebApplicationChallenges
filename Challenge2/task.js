@@ -5,7 +5,9 @@ let taskList = []
 
 function showTaskList() {
     const newArray = getLocalStorage()
-    taskList = JSON.parse(newArray)
+    if (newArray !== null) {
+        taskList = JSON.parse(newArray)
+    }
     ulElement.innerHTML = ''
     for (task of taskList) {
         const liElement = document.createElement("li")
